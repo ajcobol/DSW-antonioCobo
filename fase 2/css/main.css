@@ -1,0 +1,7 @@
+header { margin: 50px 0;}
+nav { background-color: #EFEFEF; margin: 20px 0;}
+nav a { color: #000 !important;}
+nav a.active { color: #FFF !important;}
+img { margin: 5px;}
+nav li:hover{ background-color: #AFAFAF;}
+footer { margin-top: 20px; border-top: 1px solid #BEBEBE; padding: 20px 0; background-color: #EFEFEF;}
