@@ -31,7 +31,8 @@ footer a { color: #f0c22e; text-decoration: none;}
 .container { max-width: 1333px;}
 hr { clear: both; margin: 15px 0;}
 h3 a { text-decoration: none; color: #1759b0; font-weight: bold; font-size: 22px;}
-@media  (max-width:1700px)   {
+.imgautor { width: 150px; border-radius: 50%;}
+@media  (max-width:2900px)   {
     .fl { width: 50% !important; float: left; margin: 10px 10px 10px 0;}
     .fr { width: 50% !important; float: right; margin: 10px 0 10px  10px;}
 }
