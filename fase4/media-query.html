@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <title>Media Querys</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Media Querys</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Diseño sitios web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Aprendizaje
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Aprendizaje 1</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Aprendizaje 2</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="seo.html">SEO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media-query.html">Media Query</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="frameworks.html">Frameworks CSS</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="autor.html">Autor</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <main>
+    <article>
+      <p>Son tecnicas usadas por css3 que permiten que los estilos de tu página web se ajusten a los distintos
+        dispositivos y
+        a los distintos tamaños de pantalla y orientaciones (vertical u horizontal). Entre las recomendaciones de diseño
+        de sitios mas actuales se recomienda primero diseñar para dispositivos móviles.
+
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="text-center">
+              <img src="img/rwd_desktop.png" class="img-fluid" width="180px">
+              <p>Imagen 1: Layout escritorio. propiedad de w3schools</p>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="text-center">
+              <img src="img/rwd_phone.png" class="img-fluid">
+              <p>Imagen 2: Layout movil. w3schools</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <p>Los media query deben cumplir algunas condiciones para poder ser usados. A continuación un ejemplo de como
+            usar los media query</p>
+          <div class="cajacss">
+            <span class="cssselectorcolor" style="color:brown">
+              @media only screen and (max-width: 1024px) <span class="cssdelimitercolor"
+                style="color:black">{</span><span class="cssselectorcolor" style="color:brown"><br>&nbsp; body <span
+                  class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
+                    style="color:black">{</span></span><span class="csspropertycolor" style="color:red"><br>
+                  &nbsp;&nbsp;&nbsp;
+                  background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                      class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor"
+                      style="color:black">;</span></span><br>&nbsp; </span><span class="cssdelimitercolor"
+                  style="color:black"><span class="cssdelimitercolor"
+                    style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span><br> </span>
+          </div>
+
+          <h3>Algunas distribuciones populares por dispositivos:</h3>
+          <div class="cajacss">
+            <span class="cssselectorcolor" style="color:brown">
+              <span class="commentcolor" style="color:green">
+                //Dispositivos muy pequeños (telefonos con menos de 600 pixeles) </span><br>@media only screen and
+              (max-width: 600px)
+              <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red">...</span><span class="cssdelimitercolor" style="color:black">}</span> <br><br><span
+                class="commentcolor" style="color:green">
+                // Dispositivos muy pequeñoss (tablets y teléfonos grandes, 600px y superiores)
+              </span><br>@media only screen and (min-width: 600px) <span class="cssdelimitercolor"
+                style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                class="cssdelimitercolor" style="color:black">}</span> <br><br><span class="commentcolor"
+                style="color:green">
+                // Pantallas medianas (tablets en horizontal, 768px y superiores) */</span><br>
+              @media only screen and (min-width: 768px) <span class="cssdelimitercolor"
+                style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                class="cssdelimitercolor" style="color:black">}</span> <br><br><span class="commentcolor"
+                style="color:green">
+                // Pantallas grandes (Monitores y portátiles con mas de 992px)</span><br>
+              @media only screen and (min-width: 992px) <span class="cssdelimitercolor"
+                style="color:black">{</span><span class="csspropertycolor" style="color:red">...</span><span
+                class="cssdelimitercolor" style="color:black">}</span> <br><br><span class="commentcolor"
+                style="color:green">
+                // Pantallas muy grandes (Pantallas con más de 1200px de ancho) </span><br>@media only screen and
+              (min-width: 1200px) <span class="cssdelimitercolor" style="color:black">{</span><span
+                class="csspropertycolor" style="color:red">...</span><span class="cssdelimitercolor"
+                style="color:black">}</span> <br><br><span class="commentcolor" style="color:green">
+          </div>
+          <p>Entre las distintas pantallas o dispositivos podremos variar cualquier elemento CSS que deseemos, por
+            ejemplo el tamaño de la fuente, su color, ancho de columnas o la forma de mostrar el menú ó simplemente
+            ocultar elementos visuales.</p>
+        </div>
+      </div>
+
+    </article>
+    <div class="referencias">
+      <h3>Referencias</h3>
+      <ul>
+        <li>CSS media queries
+          https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries</li>
+        <li>Responsive Web Design - Media Queries
+          https://www.w3schools.com/css/css_rwd_mediaqueries.asp</li>
+      </ul>
+    </div>
+  </main>
+
+
+  <footer>
+    <ul>
+      <li><a href="mailto:ajc10@gmail.com">ajc10@gmail.com</a></li>
+      <li>skype: antoniobo.cobo</li>
+      <li>Octubre / 2021</li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
