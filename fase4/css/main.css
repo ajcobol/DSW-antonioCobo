@@ -9,17 +9,17 @@ nav ul.nav li { margin: 0 5px; }
 nav li a { color: #FFF !important; padding: 7px 13px; display: block; text-decoration: none;}
 nav li a.active, nav li a:hover{ color: #f0c22e !important; transition: .4s;}
 */
+main { max-width: 1333px; margin: 0 auto;}
 
 .nav-bar { background-color: #1759b0; padding: 20px; color: #FFF; cursor: pointer; height: 20px;  color: #000; }
 .menu a, .menu a:focus{ color: #FFF;}
-.menu { background-color: #1759b0;  transition: all 0.3s; transition: .4s; color: #FFF; margin: 0;  padding: 0 20px; }
+.menu { background-color: #1759b0;  transition: all 0.3s; transition: .4s; color: #FFF; margin: 0;  padding: 0 20px;  margin-bottom: 10px; }
 .nav-link {color: #000; text-decoration: none; }
 .nav-link:hover { color: #000    !important; transition: .4s; background-color: #f0c22e;}
 a.dropdown-item { color: #000;}
 footer { margin-top: 30px; border-top: 1px solid #BEBEBE; padding: 20px; background-color: #173357; clear: both; color: #FFF;}
 footer ul { list-style: none;}
 footer a { color: #f0c22e; text-decoration: none;}
-main { max-width: 1333px;}
 hr { clear: both; margin: 15px 0;}
 h3 a { text-decoration: none; color: #1759b0; font-weight: bold; font-size: 22px;}
 .imgautor { width: 150px; border-radius: 50%;}
@@ -29,3 +29,5 @@ h3 a { text-decoration: none; color: #1759b0; font-weight: bold; font-size: 22px
 .referencias ul { margin-left: 20px; }
 .fl, .fr { margin-bottom: 5px;}
 .cajacss { padding: 10px; border:1px solid #BEBEBE; margin: 10px 5px; background-color: #FFF; width: 80%; border-left: 5px solid #f0c22e; }
+.bred { border-left: 15px solid red; }
+.bwarn { border-left: 15px solid #f0c22e; }
